@@ -54,19 +54,12 @@ input = {
             "target_table": {"name": "request_json_retrieval_example", "if_exists": "append", "index": False}
         },
         {
-            "dataset_name": "aws_s3_parquet_retreival_example",
+            "dataset_name": "aws_large_s3_parquet_retreival_example",
             "description": "aws reviews from the publicly available s3 instance",
-            "aws_s3_boto": {"path": "s3://s3-review-testing-sijo/parquet/", 'boto3_session': boto3_session},
+            "aws_s3_boto": {"path": "s3://amazon-reviews-pds/parquet/product_category=Digital_Music_Purchase", 'boto3_session': boto3_session},
             "write_to_csv": True,
             "target_table": {"name": "parquet_data_example", "if_exists": "append", "index": False}
         },
-        # {
-        #     "dataset_name": "aws_large_s3_parquet_retreival_example",
-        #     "description": "aws reviews from the publicly available s3 instance",
-        #     "aws_s3_boto": {"path": "s3://amazon-reviews-pds/parquet/product_category=Digital_Music_Purchase", 'boto3_session': boto3_session},
-        #     "write_to_csv": True,
-        #     "target_table": {"name": "parquet_data_example", "if_exists": "append", "index": False}
-        # },
         {
             "dataset_name": "fixed_request_type_example",
             "description": "weather station information with fixed length csv data but not a JSON response",
