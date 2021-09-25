@@ -1,0 +1,21 @@
+export FOOTBALL_API_KEY='02b3bc17cb9342058336f8fd90544b21'
+export DATABASE_URI='postgresql://localhost/postgres?user=postgres&password=SpamWalletRiverCircus'
+export AWS_ACCESS_KEY_ID='AKIAYBSJGJZVO6RQYY62'
+export AWS_SECRET_ACCESS_KEYS='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'
+
+
+# export DATABASE_URI='postgresql://192.168.132.123/postgres?user=pi&password=SpamWalletRiverCircus'
+# boto3_session = boto3.Session(profile_name="testuser")
+# boto3_session=os.environ.get("BOTO_PROFILE")
+
+
+unset FOOTBALL_API_KEY
+unset DATABASE_URI
+unset AWS_ACCESS_KEY_ID
+unset AWS_SECRET_ACCESS_KEYS
+
+
+echo $FOOTBALL_API_KEY
+echo $DATABASE_URI
+echo $AWS_ACCESS_KEY_ID
+echo $AWS_SECRET_ACCESS_KEYS

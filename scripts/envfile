@@ -1,0 +1,16 @@
+
+export FOOTBALL_API_KEY=02b3bc17cb9342058336f8fd90544b21
+export DATABASE_URI=postgresql://localhost/postgres?user=postgres&password=SpamWalletRiverCircus
+export AWS_ACCESS_KEY_ID=AKIAYBSJGJZVO6RQYY62
+export AWS_SECRET_ACCESS_KEYS=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
+
+
+
+
+
+
+
+
+
+
+
