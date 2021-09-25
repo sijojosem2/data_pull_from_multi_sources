@@ -2,8 +2,6 @@ import boto3
 import config
 
 
-# boto3_session = boto3.Session(profile_name=config.BOTO_PROFILE)
-
 boto3_session = boto3.Session(
     aws_access_key_id=config.AWS_ACCESS_KEY_ID,
     aws_secret_access_key=config.AWS_SECRET_ACCESS_KEYS,
@@ -53,6 +51,7 @@ input = {
             "write_to_csv": True,
             "target_table": {"name": "request_json_retrieval_example", "if_exists": "append", "index": False}
         },
+        # Since the S3 data set was too big for my local machine, i took only one parquet set as shown below
         {
             "dataset_name": "aws_large_s3_parquet_retreival_example",
             "description": "aws reviews from the publicly available s3 instance",
