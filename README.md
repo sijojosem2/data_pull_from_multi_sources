@@ -18,7 +18,7 @@ Below are the files that should be setup before the initial setup run
 
 ### -------  env file -------
 
-The [scripts]https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/tree/main/scripts file exports the necessary environmental variables used for the project execution
+The [scripts](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/tree/main/scripts) file exports the necessary environmental variables used for the project execution
 
 `FOOTBALL_API_KEY` is an example key that I had obtained from [football stats](https://www.football-data.org/) to fetch football data (I know this is not part of the challenge, but I was tinkering with some ideas). Down the line if a new data source is added and keys are to be exported, it should be placed here. Any secure key or credentials *must be added to this file* since the subsequent configurations and script run depend on these parameters. Ideally to maintain key confidentiality when deploying between instances this file should be added to `--- gitignore ---` to avoid overwrite, but I have added this as part of the initial configuration.
 
