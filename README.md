@@ -91,30 +91,30 @@ Any additional SQLs can also be added in between the pipeline in the 'etl' list,
         },
 
 ```
-However please ensure that the sql file is available in the `sql folder`. The pipeline *will not fail if sql file is unavailable* and the error will be handled in logs, but if there is a dependency on the missing SQL the pipeline may halt execution
+However please ensure that the sql file is available in the [sql](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/tree/main/sql) folder. The pipeline *will not fail if sql file is unavailable* and the error will be handled in logs, but if there is a dependency on the missing SQL the pipeline may halt execution
 
 
 ## Pre Run Setup - Package Deployment
 
-Once all the keys and environment is setup, from the folder where `Makefile` is available run the following:
+Once all the keys and environment is setup, from the folder where [Makefile](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/Makefile) is available run the following:
 
 `make install-packages`
 
-This will ensure that all the necessary packages for the execution is installed. The packages are picked up from the `requirements.txt`. I have kept this the latest versions as of now. Should any updated package is required, set the version in the `requirements.txt` and run `make install-packages` again.
+This will ensure that all the necessary packages for the execution is installed. The packages are picked up from the `requirements.txt`. I have kept this the latest versions as of now. Should any updated package is required, set the version in the [requirements.txt](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/requirements.txt) and run `make install-packages` again.
 
 Once the packages are deployed, the project is now ready to run 
 
 ## Data Pull
 
-From the folder where `Makefile` is available run the following:
+From the folder where [Makefile](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/Makefile) is available run the following:
 
 `make run-data-pull`
 
-This will fetch data from the sources provided in the [pipeline](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/pipeline.py) file and the logs/csv will be written to the locations specified in `config.py`
+This will fetch data from the sources provided in the [pipeline](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/pipeline.py) file and the logs/csv will be written to the locations specified in the [config.py](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/config.py)
 
 ## Query Data
 
-If all goes well with the Data pull, the query data utility can be run using :
+If all goes well with the Data pull, the query data utility can be run using the below command where the [Makefile](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/Makefile) is provided
 
 `make run-query`
 
