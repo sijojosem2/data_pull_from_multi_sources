@@ -1,6 +1,6 @@
 # Overview 
 
-The project( Challenge Option Two ) consists of two parts: `run-data-pull` for extracting data from multiple sources and `run-db-query` for console querying the data. The data pull has been modelled in a ETL pipeline fashion, with the source data specifications and the data handling provided in the `--- pipeline.py ---` file. Once the data pull has been completed, the data can be interacted with using the `run-db-query` command
+The project( Challenge Option Two ) consists of two parts: `run-data-pull` for extracting data from multiple sources and `run-db-query` for console querying the data. The data pull has been modelled in a ETL pipeline fashion, with the source data specifications and the data handling provided in the [pipeline](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/pipeline.py) file. Once the data pull has been completed, the data can be interacted with using the `run-db-query` command
 
 ## Pre Run Setup - Project Variable Configuration 
 
@@ -12,13 +12,13 @@ The working assumptions for execution:
 * The main branch with the file/folder structure has already been deployed in the target running instance in the python environment.
 * A working instance of PostgreSQL is accessible from the environment with DDL privileges.
 * AWS credentials. *not entirely sure why, but the the specified public S3 bucket needs credentials from a valid AWS account*.
-* The generated API key for the endpoints in the `--- pipeline.py ---` is available.
+* The generated API key for the endpoints in the [pipeline](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/pipeline.py) file is available.
 
 Below are the files that should be setup before the initial setup run
 
 ### -------  env file -------
 
-This `---folder--` file exports the necessary environmental variables used for the project execution
+The [scripts]https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/tree/main/scripts file exports the necessary environmental variables used for the project execution
 
 `FOOTBALL_API_KEY` is an example key that I had obtained from [football stats](https://www.football-data.org/) to fetch football data (I know this is not part of the challenge, but I was tinkering with some ideas). Down the line if a new data source is added and keys are to be exported, it should be placed here. Any secure key or credentials *must be added to this file* since the subsequent configurations and script run depend on these parameters. Ideally to maintain key confidentiality when deploying between instances this file should be added to `--- gitignore ---` to avoid overwrite, but I have added this as part of the initial configuration.
 
@@ -39,7 +39,7 @@ export AWS_SECRET_ACCESS_KEYS=awssecretkey123
 
 This `---folder--` file get the environmental variables from the above and into the python environment. 
 
-Ensure that the `env file`  are available here. Apart from then the directories are pretty straight forward in specifying where you would like to save log, csv or SQL execution files(used in ETL `pipeline`). Keep in mind that the paths are relative to the execution script
+Ensure that the `env file`  are available here. Apart from then the directories are pretty straight forward in specifying where you would like to save log, csv or SQL execution files(used in ETL [pipeline](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/pipeline.py) file). Keep in mind that the paths are relative to the execution script
 
 ```python
 
@@ -50,6 +50,8 @@ CSV_DIR      = 'csv/'
 ```
 
 ### -------  pipeline.py   *OPTIONAL*  -------
+
+The [pipeline](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/pipeline.py) file has the following quick reference guide:
 
 
 ```python
@@ -108,7 +110,7 @@ From the folder where `Makefile` is available run the following:
 
 `make run-data-pull`
 
-This will fetch data from the sources provided in the `pipeline.py` and the logs/csv will be written to the locations specified in `config.py`
+This will fetch data from the sources provided in the [pipeline](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/pipeline.py) file and the logs/csv will be written to the locations specified in `config.py`
 
 ## Query Data
 
