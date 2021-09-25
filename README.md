@@ -100,7 +100,7 @@ Once all the keys and environment is setup, from the folder where [Makefile](htt
 
 `make install-packages`
 
-This will ensure that all the necessary packages for the execution is installed. The packages are picked up from the `requirements.txt`. I have kept this the latest versions as of now. Should any updated package is required, set the version in the [requirements.txt](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/requirements.txt) and run `make install-packages` again.
+This will ensure that all the necessary packages for the execution is installed. The packages are picked up from the [requirements.txt](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/requirements.txt). I have kept this the latest versions as of now. Should any updated package is required, set the version in the [requirements.txt](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/requirements.txt) and run `make install-packages` again.
 
 Once the packages are deployed, the project is now ready to run 
 
