@@ -37,9 +37,9 @@ export AWS_SECRET_ACCESS_KEYS=awssecretkey123
 
 ### -------  config.py -------
 
-This `---folder--` file get the environmental variables from the above and into the python environment. 
+This [config.py](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/config.py) file gets the environmental variables from the above env file and exports them into the python environment. 
 
-Ensure that the `env file`  are available here. Apart from then the directories are pretty straight forward in specifying where you would like to save log, csv or SQL execution files(used in ETL [pipeline](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/pipeline.py) file). Keep in mind that the paths are relative to the execution script
+Ensure that the [envfile](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/scripts/envfile) is available here. Apart from then the directories this is pretty straight forward in specifying where you would like to save log, csv or SQL execution files(used in ETL [pipeline](https://github.com/sijojosem2/data-engineer-code-challenge-sijo-completed/blob/main/pipeline.py) file). Keep in mind that the paths are relative to the execution script
 
 ```python
 
