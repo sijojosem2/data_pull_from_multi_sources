@@ -4,7 +4,7 @@ The project( Challenge Option Two ) consists of two parts: `run-data-pull` for e
 
 ## Pre Run Setup - Project Variable Configuration 
 
-The initial setup consists of deploying the python packages required for execution and the environment variable configuration. A working python 3.9 environment is suggested. 
+The initial setup consists of deploying the python packages required for execution and the environment variable configuration. A working python 3.9, and since the use of Makefile is involved, ideally a Linux/Unix based environment is preferred.
 
 The working assumptions for execution:
 
